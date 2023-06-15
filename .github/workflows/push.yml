@@ -12,6 +12,7 @@ jobs:
       - name: Cypress install
         uses: cypress-io/github-action@v5
         with:
+          working-directory: client
           # Disable running of tests within install job
           runTests: false
           build: npm run build
